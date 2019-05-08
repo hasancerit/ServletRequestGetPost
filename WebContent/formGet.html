@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body> 
+    <form id="form1" action="servletrequestget" method="get">
+    <div>              
+    </div> 
+    <table id="table1" cellspacing="5px" cellpading="5%">
+       <tr>
+              <td align="right">Isim:</td>
+              <td><input type="text" name="ad" /></td>
+       </tr>
+       <tr>
+              <td align="right">Soy Isim:</td>
+              <td><input type="text" name="soyad" /></td>
+       </tr>
+        <tr>
+              <td align="right">Cinsiyet</td>
+              <td>
+			        <select name="cinsiyet">
+			            <option value="Bay" selected="selected">Bay</option>
+			            <option value="Bayan">Bayan</option>
+			         </select>
+     		   </td>
+       </tr>
+
+       <tr>
+              <td align="right">Medeni Hal</td>
+              <td>
+			        <input type="radio" name="medeni" value="Bekar" />Bekar
+			        <input type="radio" name="medeni" value="Evli" /> Evli
+			        <input type="radio" name="medeni" value="Dul" />Dul
+			        <input type="radio" name="medeni" value="Javaci" />Javaci
+    	    </td>
+       </tr>
+
+        <tr>
+              <td align="right">Diller</td>
+              <td>
+			        <input type="checkbox" name="dil" value="Java" /> Java
+			        <input type="checkbox" name="dil" value="C" />C
+			        <input type="checkbox" name="dil" value="C++" />C++
+      		  </td>
+       </tr>        
+        <tr>
+        		<td> 
+        			<input type="submit" value="Submit"/> 
+        		</td>
+        </tr>
+</table> 
+    </form>
+</body>
+</html>
