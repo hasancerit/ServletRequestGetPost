@@ -19,6 +19,15 @@
 		<servlet-name>ServletRequestPost</servlet-name>
 		<url-pattern>/servletrequestpost</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MoreRequestMethod</servlet-name>
+		<servlet-class>ikip.MoreRequestMethod</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MoreRequestMethod</servlet-name>
+		<url-pattern>/morerequestmethod</url-pattern>
+	</servlet-mapping>
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
