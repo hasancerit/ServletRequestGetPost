@@ -14,9 +14,13 @@ public class MoreRequestMethod extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		PrintWriter pw = resp.getWriter();
-
+		
+		//get header ile header bilgilerine ulaþabiliriz. Burda Host bilgisine ulaþýldý.
+		//hostHeader.getHeaderNames ile de tüm header bilgileri isim olarak geri döndürülür(ret Enumeration).
+		//Bu isimleri de getHeader()'a parametre olarak yollayarak bilgileri alabiliriz.
 		String hostHeader = req.getHeader("host");
 		String serverName = req.getServerName();
+		//server port requestin ilk karsilandigi basladigi porttur. local port ise bu istegin tamamlandigi porttur.
 		int localPort = req.getLocalPort();
 		int serverPort = req.getServerPort();
 		int remotePort = req.getRemotePort();
